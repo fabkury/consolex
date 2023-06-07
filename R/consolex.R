@@ -1,3 +1,4 @@
+#' @export
 consolex <- function(..., ts = FALSE) {
   # The 'manouver' below is to remove leading zeroes in the hour number.
   if(ts) {
@@ -9,6 +10,7 @@ consolex <- function(..., ts = FALSE) {
   cat(out_txt)
 }
 
+#' @export
 console <- function(..., ts = TRUE) {
   # ts: Se deseja acrescentar datahora.
   consolex(paste0(..., '\n'), ts = ts)
